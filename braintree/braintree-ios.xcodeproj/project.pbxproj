@@ -886,7 +886,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n# Copy BraintreeResources.bundle from its Products directory to the target's build directory\nSRC=\"$BUILD_DIR/$CONFIGURATION/BraintreeResources.bundle\"\nDEST_DIR=\"$BUILD_DIR/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/\"\ncp -R \"${SRC}\" \"${DEST_DIR}\"\n";
+			shellScript = "\n# Copy BraintreeResources.bundle from its Products directory to the target's build directory\nSRC=\"$BUILD_DIR/$CONFIGURATION/BraintreeResources.bundle\"\nDEST_DIR=\"$BUILD_DIR/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/\"\n#cp -R \"${SRC}\" \"${DEST_DIR}\"\n";
 		};
 		9C2865BD1704F995000C411C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
